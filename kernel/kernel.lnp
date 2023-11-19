@@ -1,0 +1,5 @@
+--cpu ARM7TDMI "startup.o" "kernel.o" 
+--strict --scatter "kernel.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\kernel.map" -o kernel.axf
